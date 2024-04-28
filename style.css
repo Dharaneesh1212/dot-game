@@ -39,7 +39,7 @@ input {
   cursor: pointer;
 }
 
-.btns{
+.btns {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,4 +103,37 @@ input {
 
 canvas {
   border-radius: 4px;
+}
+
+/* mobile responsive */
+@media (min-width: 375px) and (max-width: 425px) {
+  input {
+    height: 1.5rem;
+    width: 10rem;
+    padding: 0.3rem;
+    font-size: medium;
+    font-family: cursive;
+    text-transform: capitalize;
+    outline: none;
+  }
+
+  .component {
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    border: 3px solid grey;
+    background-image: linear-gradient(
+      135deg,
+      #ff99cc,
+      #99ccff,
+      #cc99ff,
+      #ffcc99,
+      #ffff99
+    );
+    position: relative;
+  }
 }

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 2rem;
+  width: 15rem;
+  padding: 0.3rem;
+  font-size: medium;
+  font-family: cursive;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+#start {
+  padding: 0.3rem 1rem;
+  font-size: medium;
+  background-color: deepskyblue;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#restart {
+  padding: 0.5rem 1rem;
+  font-size: medium;
+  background-color: rgb(224, 19, 19);
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#next {
+  padding: 0.5rem 1rem;
+  font-size: medium;
+  background-color: rgb(13, 219, 13);
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.component {
+  height: 28rem;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border: 3px solid grey;
+  background-image: linear-gradient(
+    135deg,
+    #ff99cc,
+    #99ccff,
+    #cc99ff,
+    #ffcc99,
+    #ffff99
+  );
+  position: relative;
+}
+
+canvas {
+  border-radius: 4px;
+}

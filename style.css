@@ -108,17 +108,17 @@ canvas {
 /* mobile responsive */
 @media (min-width: 375px) and (max-width: 425px) {
   input {
-    height: 1.5rem;
+    height: 2rem;
     width: 10rem;
     padding: 0.3rem;
-    font-size: medium;
+    font-size: small;
     font-family: cursive;
     text-transform: capitalize;
     outline: none;
   }
 
   .component {
-    height: 20rem;
+    height: auto;
     width: 20rem;
     display: flex;
     align-items: center;

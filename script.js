@@ -1,5 +1,3 @@
-`use strict`
-
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("gameCanvas");
     const ctx = canvas.getContext("2d");
@@ -12,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let isDrawing = false;
     let lastX = 0;
     let lastY = 0;
+    let levelsCompleted = 0; // Variable to track levels completed
 
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -158,6 +157,10 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Enter your name to Play the game");
             return;
         }
+        if (levelsCompleted === 1) { // Display message only after the second level completion
+            // Alert for more levels
+            alert("More levels are coming!");
+        }
         // Clear the canvas and reset dots array
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         dots = [];
@@ -170,9 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
             { x: 200, y: 300 }
         ];
         draw();
+        levelsCompleted++; // Increment levels completed
     });
 });
-
-
-//
-
